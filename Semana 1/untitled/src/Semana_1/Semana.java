@@ -217,4 +217,46 @@ public class Semana {
             System.out.print(num + " ");
         }
     }
+
+
+
+
+    //             +++++++++++++++++ Ejercicio 10 +++++++++++++++++
+    /*Crear un programa que calcule la longitud de una cadena sin usar el método length().*/
+
+    private int ejercicioOnce(String cadenaIngresada){
+
+        ArrayList<Character> arreglo = new ArrayList<>();
+        int contadorLongitud = 0;
+        arreglo.add(cadenaIngresada.charAt(0));
+
+
+
+        for(int i=0;i < cadenaIngresada.length();i++){
+            contadorLongitud++;
+        }
+
+
+        return contadorLongitud;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
