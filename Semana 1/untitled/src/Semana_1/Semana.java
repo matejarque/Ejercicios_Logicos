@@ -221,7 +221,7 @@ public class Semana {
 
 
 
-    //             +++++++++++++++++ Ejercicio 10 +++++++++++++++++
+    //             +++++++++++++++++ Ejercicio 11 +++++++++++++++++
     /*Crear un programa que calcule la longitud de una cadena sin usar el método length().*/
 
     private int ejercicioOnce(String cadenaIngresada){
@@ -241,10 +241,18 @@ public class Semana {
     }
 
 
+    //             +++++++++++++++++ Ejercicio 12 +++++++++++++++++
+    /*Crear un programa que ordene un arreglo de enteros de menor a mayor.*/
 
+    private void ejercicioDoce(int[] arreglo){
 
+        int[] arregloAux = new int[arreglo.length];
+        Arrays.sort(arreglo);
+        for(int i = 0; i < arreglo.length; i++){
+            arregloAux[i] = arreglo[i];
+        }
 
-
+    }
 
 
 
