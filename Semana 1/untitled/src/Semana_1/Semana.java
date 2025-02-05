@@ -1,6 +1,7 @@
+package Semana_1;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Semana {
 
@@ -170,33 +171,50 @@ public class Semana {
 
     //             +++++++++++++++++ Ejercicio 9 +++++++++++++++++
     /*Crear un programa que imprima los números primos en un rango.*/
-    private void ejercicioNueva(Integer comienzo, Integer fin){
+    private void ejercicioNueva(Integer fin) {
+        // Inicializa el arreglo para almacenar los números primos
+        ArrayList<Integer> numerosPrimos = new ArrayList<>();
 
-        //solo son divididos por si mismo y el 1.
-        int [] arregloAuxiliar = new int[10];
-        int [] arreglo = new int[rangoNumeros];
+        // Recorre cada numero en el rango desde 2 hasta 'fin'
+        for (int i = 2; i < fin; i++) {
+            boolean esPrimo = true;
 
-        for (int i = comienzo; i <= fin; i++) {
-            arreglo[i] = i;
-            if(i)
+
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    esPrimo = false;
+                    break;
+                }
+            }
+            //si es primo se agrega a la lista.
+            if (esPrimo) {
+                numerosPrimos.add(i);
+            }
         }
-
-
-
+        //se muestran los numeros primos
+        System.out.println("Nmeros primos hasta " + fin + ": " + numerosPrimos);
     }
+
 
     //             +++++++++++++++++ Ejercicio 10 +++++++++++++++++
     /*Crear un programa que calcule la secuencia de Fibonacci hasta el n-ésimo término.*/
     private void ejercicioDiez(Integer rangoNumeros){
-        int [] arreglo = new int[rangoNumeros];
-        int aux = 0;
-        while(rangoNumeros != 0){
-            for (int i = 0; i < arreglo.length; i++) {
-                aux = arreglo[i];
-                arreglo[i] = i;
+        int[] arreglo = new int[rangoNumeros];
 
-            }
+        if (rangoNumeros > 0) {
+            arreglo[0] = 0;
+        }
+
+        if (rangoNumeros > 1) {
+            arreglo[1] = 1;
+        }
+
+        for (int i = 2; i < rangoNumeros; i++) {
+            arreglo[i] = arreglo[i - 1] + arreglo[i - 2];
+        }
+
+        for (int num : arreglo) {
+            System.out.print(num + " ");
         }
     }
-
 }
