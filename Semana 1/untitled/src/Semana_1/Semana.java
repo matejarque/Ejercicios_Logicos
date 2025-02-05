@@ -255,8 +255,23 @@ public class Semana {
     }
 
 
+    devuelve el resto: Math.IEEEremainder(a, b) Math.round(a): Redondea a al entero más cercano
+    /*Crear un programa que calcule el máximo común divisor (MCD) de dos números.*/
 
+    private void ejercicioTrece(double num1, double num2){
+        double maximo;
+        double minimo;
+        double auxiliar;
+        do{
+            maximo = Math.max(num1, num2);
+            minimo = Math.min(num1, num2);
+            auxiliar = Math.IEEEremainder(maximo, minimo); //retorna el residuo pero se podria usar modulo (%)
+            num1 = minimo;
+            num2 = auxiliar;
+            
+        }while(auxiliar != 0);
 
+    }
 
 
 
