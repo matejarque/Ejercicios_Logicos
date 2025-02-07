@@ -1,7 +1,9 @@
 package Semana_1;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Semana {
 
@@ -255,7 +257,7 @@ public class Semana {
     }
 
 
-
+    //             +++++++++++++++++ Ejercicio 13 +++++++++++++++++
     /*Crear un programa que calcule el máximo común divisor (MCD) de dos números.*/
 
     private void ejercicioTrece(double num1, double num2){
@@ -272,8 +274,9 @@ public class Semana {
         }while(auxiliar != 0);
 
     }
+    //             +++++++++++++++++ Ejercicio 14 +++++++++++++++++
     /*Crear un programa que elimine los duplicados de un arreglo de enteros.*/
-    private void ejercicioCatorce(int[] arreglo){
+    private void ejercicioCatorce(int[] arreglo) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         Arrays.sort(arreglo);
         for (int i = 0; i < arreglo.length; i++) {
@@ -288,7 +291,81 @@ public class Semana {
 
             System.out.println(arrayList);
 
+        }
     }
+        //             +++++++++++++++++ Ejercicio 15 +++++++++++++++++
+        /*Crear un programa que encuentre los dos números más cercanos entre sí en un arreglo.*/
+
+
+
+
+
+
+        //             +++++++++++++++++ DIA 4 +++++++++++++++++
+        //             +++++++++++++++++ Ejercicio 16 +++++++++++++++++
+        /*  Crear un programa que calcule el promedio de los dígitos de un número entero.*/
+
+        private void ejercicioDieciseis(int numEntero){
+
+        }
+
+
+
+
+
+
+
+        /*Crear un programa que cuente cuántas veces aparece una subcadena en una cadena dada.*/
+
+        private void ejercicioDiecisiete(String cadenaIngresar, String subcadena) {
+            int contador = 0;
+            int indice = cadenaIngresar.indexOf(subcadena);
+
+            while (indice != -1) {
+                contador++;
+                indice = cadenaIngresar.indexOf(subcadena, indice + 1);
+            }
+
+            System.out.println("La subcadena aparece " + contador + " veces");
+        }
+
+
+
+
+
+    /*Crear un programa que simule un conversor de unidades (metros a kilómetros, gramos a kilogramos, etc.).*/
+
+        private void ejercicioDieciocho(){
+            Scanner sc = new Scanner(System.in);
+            String resultado;
+            do {
+                System.out.println("Digite el numero que desea convertir: ");
+                int numeroAConvertir = sc.nextInt();
+                System.out.println("Digite la medida");
+                System.out.println("metros, gramos o mililitros");
+                String medida = sc.next().trim().toLowerCase();
+
+
+
+                if(numeroAConvertir >= 1){
+                int convercion;
+
+                    switch (medida){
+                        case "metros":
+                            //calculo para convertir metros a kilometros
+                            break;
+
+                        case "gramos":
+                            //calculo
+                            break;
+                        case "mililitros":
+                            //calculo
+                            break;
+                    }
+                }
+
+            }while(resultado.isEmpty() = false);
+        }
 
 
 
@@ -299,4 +376,5 @@ public class Semana {
 
 
 
-}
+
+    }
