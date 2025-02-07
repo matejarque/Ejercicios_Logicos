@@ -377,6 +377,24 @@ public class Semana {
 
 
 
+        /*Crear un programa que determine si un número es un número perfecto.*/
+        private void ejercicioDiecinueve(int num) {
+            int suma = 0;
+
+            // Recorremos los números desde 1 hasta num-1 para encontrar los divisores propios
+            for (int i = 1; i < num; i++) {
+                if (num % i == 0) { // Si 'i' es divisor de 'num'
+                    suma += i; // Lo sumamos
+                }
+            }
+
+            // Verificamos si es un número perfecto
+            if (suma == num) {
+                System.out.println("El número es perfecto");
+            } else {
+                System.out.println("El número no es perfecto");
+            }
+        }
 
 
 
