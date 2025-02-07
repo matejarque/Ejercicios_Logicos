@@ -383,20 +383,30 @@ public class Semana {
 
             // Recorremos los números desde 1 hasta num-1 para encontrar los divisores propios
             for (int i = 1; i < num; i++) {
-                if (num % i == 0) { // Si 'i' es divisor de 'num'
-                    suma += i; // Lo sumamos
+                if (num % i == 0) {
+                    suma += i;
                 }
             }
 
-            // Verificamos si es un número perfecto
+            // Verificamos si es un numero perfecto
             if (suma == num) {
-                System.out.println("El número es perfecto");
+                System.out.println("El numero es perfecto");
             } else {
                 System.out.println("El número no es perfecto");
             }
         }
 
+        /*Crear un programa que divida un número entre 2 hasta que el resultado sea menor que 1.*/
+        private void ejercicioVeinte(int num) {
 
+            while (num  > 1) {
+                num = num / 2;
+                System.out.println(num);
+            }
+
+        }
+
+    //             +++++++++++++++++ DIA 5 +++++++++++++++++
 
 
 
