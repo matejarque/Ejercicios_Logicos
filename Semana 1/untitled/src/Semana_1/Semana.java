@@ -334,37 +334,44 @@ public class Semana {
 
 
     /*Crear un programa que simule un conversor de unidades (metros a kilómetros, gramos a kilogramos, etc.).*/
-
-        private void ejercicioDieciocho(){
+        private void ejercicioDieciocho() {
             Scanner sc = new Scanner(System.in);
-            String resultado;
+            int numeroAConvertir;
+            String medida;
+            double conversion = 0;
+
             do {
                 System.out.println("Digite el numero que desea convertir: ");
-                int numeroAConvertir = sc.nextInt();
-                System.out.println("Digite la medida");
-                System.out.println("metros, gramos o mililitros");
-                String medida = sc.next().trim().toLowerCase();
+                numeroAConvertir = sc.nextInt();
+                sc.nextLine();
 
+                System.out.println("Digite la medida (metros, gramos o mililitros):");
+                medida = sc.next().trim().toLowerCase();
 
-
-                if(numeroAConvertir >= 1){
-                int convercion;
-
-                    switch (medida){
+                if (numeroAConvertir >= 1) {
+                    switch (medida) {
                         case "metros":
-                            //calculo para convertir metros a kilometros
-                            break;
-
                         case "gramos":
-                            //calculo
-                            break;
                         case "mililitros":
-                            //calculo
+                            conversion = numeroAConvertir / 1000.0; // Usa 1000.0 para conversión decimal
                             break;
+                        default:
+                            System.out.println("Unidad no valida.");
+                            continue;
                     }
+
+                    // Imprimir resultado
+                    System.out.println("La medida ingresada fue: " + medida +
+                            ", el numero a convertir fue: " + numeroAConvertir +
+                            ", resultado: " + conversion + " " + medida.substring(0, medida.length() - 1) + "k");
+                } else {
+                    System.out.println("El numero debe ser mayor o igual a 1");
                 }
 
-            }while(resultado.isEmpty() = false);
+            } while (numeroAConvertir != 0);
+
+            sc.close();
+            System.out.println("Programa finalizado.");
         }
 
 
@@ -377,4 +384,7 @@ public class Semana {
 
 
 
-    }
+
+
+
+}
