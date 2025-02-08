@@ -3,6 +3,7 @@ package Semana_1;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Semana {
@@ -399,9 +400,9 @@ public class Semana {
         /*Crear un programa que divida un número entre 2 hasta que el resultado sea menor que 1.*/
         private void ejercicioVeinte(int num) {
 
-            while (num  > 1) {
-                num = num / 2;
+            while (num  >= 1) {
                 System.out.println(num);
+                num = num / 2;
             }
 
         }
@@ -409,7 +410,20 @@ public class Semana {
     //             +++++++++++++++++ DIA 5 +++++++++++++++++
 
 
+        /*Crear un programa que encuentre el número de ocurrencias de una palabra en una lista de palabras.*/
+        private int ejercicioVeintiUno(ArrayList<String> listaPalabras) {
+            int count = 0;
+            for(int i = 0; i < listaPalabras.size(); i++){
+                if(listaPalabras.get(i).toLowerCase().trim().equals("hola")){
+                    count++;
+                }
+            }
+            return count;
+        }
 
+        /*Crear un programa que calcule el área de un triángulo dada su base y altura.*/
+
+        /*Crear un programa que realice la multiplicación de dos matrices 2x2.*/
 
 
 
