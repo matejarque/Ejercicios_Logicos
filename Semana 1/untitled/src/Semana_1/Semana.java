@@ -423,6 +423,10 @@ public class Semana {
 
         /*Crear un programa que calcule el área de un triángulo dada su base y altura.*/
 
+    private void ejercicioVeintiDos(double base, double altura) {
+        System.out.println("El area del triangulo es: " + (base / 2) * altura );
+    }
+
         /*Crear un programa que realice la multiplicación de dos matrices 2x2.*/
 
 
