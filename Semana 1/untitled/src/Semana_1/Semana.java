@@ -427,12 +427,64 @@ public class Semana {
         double area = (base * altura) / 2; 
         System.out.println("El área del triángulo es: " + area);
     }
+
+
+
+    /*Crear un programa que imprima la tabla de multiplicar de un número.*/
+    private void ejercicioVeintiTres(int num) {
+        for (int i = 1; i < 11; i++) {
+            System.out.println( num + " x " + i);
+        }
     }
 
-        /*Crear un programa que realice la multiplicación de dos matrices 2x2.*/
 
 
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
