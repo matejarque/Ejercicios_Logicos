@@ -437,6 +437,12 @@ public class Semana {
         }
     }
 
+    /*Crear un programa que realice un conteo regresivo de 10 a 0.*/
+    private void ejercicioVeintiCuatro() {
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
+    }
 
 
 
