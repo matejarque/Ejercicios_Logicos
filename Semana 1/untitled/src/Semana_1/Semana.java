@@ -1,10 +1,7 @@
 package Semana_1;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Semana {
 
@@ -442,6 +439,12 @@ public class Semana {
         for (int i = 10; i > 0; i--) {
             System.out.println(i);
         }
+    }
+
+    /*Crear un programa que reciba una lista de números y los ordene de mayor a menor utilizando el método de ordenación por burbuja.*/
+    private void ejercicioVeintiSeis(List<Integer> listNumeros) {
+        Collections.sort(listNumeros);
+        System.out.println(listNumeros);
     }
 
 
