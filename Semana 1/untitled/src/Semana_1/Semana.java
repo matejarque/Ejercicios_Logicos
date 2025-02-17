@@ -448,6 +448,26 @@ public class Semana {
     }
 
 
+    /*Crear un programa que determine si un número es un número Armstrong.*/
+    /*Un número Armstrong es aquel que es igual a la suma de sus propios dígitos elevados
+    a la potencia de la cantidad de dígitos. Verificar si un número lo es.*/
+    private void ejercicioVeintiSiete(int num) {
+        String parce = Integer.toString(num), auxLetra;
+        int cantidadDigitos = parce.length(), aux = 0, suma = 0;
+        for (int i = 0; i < parce.length(); i++) {
+            auxLetra = String.valueOf(parce.charAt(i));
+            aux = Integer.parseInt(auxLetra);
+            suma += Math.pow(aux, cantidadDigitos);
+        }
+        if(suma == num){
+            System.out.println("El numero ingresado es un numero Armstrong");
+
+        }else {
+            System.out.println("El numero ingresado no es un numero Armstrong");
+        }
+    }
+
+
 
 
 
