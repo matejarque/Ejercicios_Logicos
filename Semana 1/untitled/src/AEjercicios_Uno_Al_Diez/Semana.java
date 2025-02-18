@@ -1,6 +1,5 @@
-package Semana_1;
+package AEjercicios_Uno_Al_Diez;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Semana {
@@ -467,6 +466,10 @@ public class Semana {
         }
     }
 
+    /*Crear un programa que calcule el área de un trapecio.*/
+    private void ejercicioVeintiOcho(Double baseMayor, double baseMenor, double altura){
+        System.out.println("El area del trapecio es:" + ((baseMayor + baseMenor) * altura) / 2 );
+    }
 
 
 
