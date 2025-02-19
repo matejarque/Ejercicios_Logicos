@@ -78,6 +78,9 @@ public class veinte {
 
 
 
+    /*Crear un programa que calcule el número de días entre dos fechas dadas..*/
+    private void ejercicioVeintiNueve(int numMaximo){
 
+    }
 
 }
