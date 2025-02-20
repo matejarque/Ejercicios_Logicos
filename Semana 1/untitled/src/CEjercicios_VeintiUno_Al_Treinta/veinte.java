@@ -79,7 +79,7 @@ public class veinte {
 
 
     /*Crear un programa que genere una secuencia de números aleatorios únicos dentro de un rango.*/
-    private void ejercicioVeintiNueve(int numMaximo, int numMinimo){
+    private ArrayList<Integer> ejercicioVeintiNueve(int numMaximo, int numMinimo){
         ArrayList listaNumeros = new ArrayList();
         if(numMaximo > numMinimo ){
             for(int i = numMinimo; i < numMaximo; i++){
@@ -89,6 +89,11 @@ public class veinte {
         }else {
             System.out.println("Error");
         }
+        return listaNumeros;
+    }
+    /*Crear un programa que realice la multiplicación de dos matrices 2x2.*/
+    private void ejercicioTreinta(int[] matriz1, int[] matriz2){
+        
     }
 
 }
