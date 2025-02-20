@@ -78,9 +78,17 @@ public class veinte {
 
 
 
-    /*Crear un programa que calcule el número de días entre dos fechas dadas..*/
-    private void ejercicioVeintiNueve(int numMaximo){
-
+    /*Crear un programa que genere una secuencia de números aleatorios únicos dentro de un rango.*/
+    private void ejercicioVeintiNueve(int numMaximo, int numMinimo){
+        ArrayList listaNumeros = new ArrayList();
+        if(numMaximo > numMinimo ){
+            for(int i = numMinimo; i < numMaximo; i++){
+                listaNumeros.add(i);
+            }
+            Collections.shuffle(listaNumeros);
+        }else {
+            System.out.println("Error");
+        }
     }
 
 }
