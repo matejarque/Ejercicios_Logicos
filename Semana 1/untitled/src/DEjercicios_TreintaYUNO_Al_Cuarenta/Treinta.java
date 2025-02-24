@@ -1,9 +1,10 @@
 package DEjercicios_TreintaYUNO_Al_Cuarenta;
+import java.util.Scanner;
 
 public class Treinta {
     // Quiero algo que me ayude a saber si un número es una "torre digital". //
     /*Un número es una "torre digital" si cada uno de sus dígitos es mayor o igual al anterior cuando lo lees de izquierda a derecha.*/
-
+Scanner teclado = new Scanner(System.in);
     private void treinta(){
 
     }
@@ -30,6 +31,18 @@ public class Treinta {
             i++;
             System.out.println(i);
         }
+    }
+
+    /*
+    Realizar un programa que muestre en pantalla palabras que sean ingresadas por
+    teclado hasta que se ingrese la palabra salir
+    */
+    private void TreintaYTres(){
+        String palabra;
+        do{
+            System.out.println("Ingrese una palabra:");
+            palabra = teclado.nextLine();
+        }while (!palabra.equals("salir"));
     }
 
 }
