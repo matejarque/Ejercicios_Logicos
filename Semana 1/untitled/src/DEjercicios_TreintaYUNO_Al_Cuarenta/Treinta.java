@@ -1,4 +1,6 @@
 package DEjercicios_TreintaYUNO_Al_Cuarenta;
+import com.sun.security.jgss.GSSUtil;
+
 import java.sql.Array;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -78,6 +80,23 @@ public class Treinta {
 */
 
     private void TreintaYCinco(){}
+
+    /*
+    Arbolito de navidad
+    * */
+    private void TreintaYSeis(){
+        int altura = 5;
+        for (int x = 0; x < altura; x++){
+            for (int y = 0; y < altura - x - 1; y++){
+                System.out.print(" ");
+            }
+            for (int z = 0; z < 2 * x + 1; z++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
 
 
 
