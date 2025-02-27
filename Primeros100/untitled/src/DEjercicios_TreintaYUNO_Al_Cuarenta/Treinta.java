@@ -121,8 +121,27 @@ public class Treinta {
     }
 
     /*
+
+    *Llevar a cabo un programa que incluya un vector que almacene los nombres: Alejandra, Leonardo
+    * Rosa, Guillermo, Gabriel, Daniel, Luisa y Ludminla. Realizar un recorrido del vector para cargar los datos y otro recorrido para mostrar por pantalla
     *
     * */
+
+    private void TrintaYSiete(){
+        String[][] matrizNombres = new String[2][4];
+        System.out.println("Ingrese los nombres de las personas");
+        for(int i = 0; i < 2; i++){
+            for(int j = 0; j < 4; j++){
+                matrizNombres[i][j] = teclado.nextLine();
+            }
+        }
+        System.out.println("Nombres ingresados: ");
+        for(int i = 0; i < 2; i++){
+            for(int j = 0; j < 4; j++){
+                System.out.println(matrizNombres[i][j]);
+            }
+        }
+    }
 
 
 
