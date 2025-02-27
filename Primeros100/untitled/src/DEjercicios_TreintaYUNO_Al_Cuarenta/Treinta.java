@@ -57,29 +57,52 @@ public class Treinta {
     * Realizar un programa que permita cargar 15 numeros en un vector. Una vez cargados se necesita que el programa cuente
         e informe por pantalla cuantas veces se cargo el numero 3
     * */
-    private void TreintaYCuatro(){
-        int numeroIngresado, numeroTres = 0;
-        ArrayList<Integer> arreglo = new ArrayList<>();
-        for(int x = 0; x < 15; x++){
-            System.out.println("ingrese un numero:");
-            arreglo.add(teclado.nextInt());
-            if(arreglo.get(x) == 3){
+    private int TreintaYCuatro(){
+        int[] arreglo = new int[14];
+        System.out.println("Ingrese 15 numero apra poder cargar el arreglo");
+        int numeroTres = 0;
+        for(int i = 0; i <= arreglo.length; i++){
+            arreglo[i] = teclado.nextInt();
+            if(arreglo[i] == 3){
                 numeroTres++;
             }
         }
-        System.out.println("La cantidad de veces que se ingreso el numero tres fue:" + numeroTres);
-
+        System.out.println("El numero tres se encontro:");
+        return numeroTres;
     }
 /*
     En una tabla de 4 filas y 4 columnas se guardan las notas de 4 alumnos, de secundaria.
     Cada fila corresponde a las notas y al promedio de cada alumno. Se necesita un programa que permita
-    a un profesor cargar, en las 3 posicines (columnas) de cada fila, las notas del alumn y que en la ultima columna
+    a un profesor cargar, en las 3 posicines (columnas) de cada fila, las notas del alumno y que en la ultima columna
     se calculen los promedios. Una vez realizados los calculos, se desea mostrar las 3 notas de cada alumno y el promedio
     correspondiente recorriendo la matriz
 
 */
 
-    private void TreintaYCinco(){}
+    private void TreintaYCinco(){
+        Double[][] matriz = new Double[4][4];
+        Double suma = 0.0;
+        System.out.println("Ingrese las notas de cada alumno");
+        //carga de los alumnos
+        for(int i = 0; i <= 4; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.println("Nota del alumno " + j);
+                matriz[i][j] = teclado.nextDouble();
+                suma += matriz[i][j];
+            }
+            matriz[i][3] = suma / 3;
+            suma = 0.0;
+        }
+
+        for(int i = 0; i <= 4; i++){
+            System.out.println("Nota del alumno numero: " + i);
+            for(int j = 0; j < 3; j++){
+                System.out.println(matriz[i][j]);
+            }
+            System.out.println("Promedio del alumno en base a sus notas: " +  matriz[i][3]);
+        }
+
+    }
 
     /*
     Arbolito de navidad
@@ -96,6 +119,10 @@ public class Treinta {
             System.out.println();
         }
     }
+
+    /*
+    *
+    * */
 
 
 
