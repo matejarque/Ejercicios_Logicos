@@ -128,18 +128,14 @@ public class Treinta {
     * */
 
     private void TrintaYSiete(){
-        String[][] matrizNombres = new String[2][4];
+        String[] matrizNombres = new String[7];
         System.out.println("Ingrese los nombres de las personas");
-        for(int i = 0; i < 2; i++){
-            for(int j = 0; j < 4; j++){
-                matrizNombres[i][j] = teclado.nextLine();
-            }
+        for(int i = 0; i < 8; i++){
+            matrizNombres[i] = teclado.nextLine();
         }
         System.out.println("Nombres ingresados: ");
-        for(int i = 0; i < 2; i++){
-            for(int j = 0; j < 4; j++){
-                System.out.println(matrizNombres[i][j]);
-            }
+        for(int i = 0; i < 8; i++){
+            System.out.println(matrizNombres[i]);
         }
     }
 
