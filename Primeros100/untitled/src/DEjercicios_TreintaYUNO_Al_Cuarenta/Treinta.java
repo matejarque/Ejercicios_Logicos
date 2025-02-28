@@ -128,7 +128,7 @@ public class Treinta {
     * */
 
     private void TrintaYSiete(){
-        String[] matrizNombres = new String[7];
+        String[] matrizNombres = new String[8];
         System.out.println("Ingrese los nombres de las personas");
         for(int i = 0; i < 8; i++){
             matrizNombres[i] = teclado.nextLine();
@@ -137,6 +137,53 @@ public class Treinta {
         for(int i = 0; i < 8; i++){
             System.out.println(matrizNombres[i]);
         }
+    }
+
+/**
+ * Crear un programa para generar un email a partir de los siguientes datos: Nombre, empresa y dominio: resultado final: Email: nombre.sitienemas@empresa.dominio
+ */
+
+    private void TreintaYOcho(String nombre, String empresa, String dominio){
+        String nombreFormateado = nombre.toLowerCase().replace(' ', '.');
+        String empresaFormateada = empresa.toLowerCase().trim();
+        String dominioFormateado = dominio.toLowerCase().trim();
+        System.out.println("Como resultado su email es:");
+        System.out.println(nombreFormateado + "@" + empresaFormateada + "." + dominioFormateado);
+    }
+
+    /**
+       Se solicita crear un programa para pedir la información de un empleado. los datos solicitados se deben introducir por consola.
+        Nombre del empleado-Edad,saladio, es jefe de departamento
+        Una vez que se han capturado los datos, se deben mandar a imprimir a consola
+    */
+    private void TrintaYNueve(){
+        System.out.println("---Ingrese sus datos---");
+
+        System.out.print("Nombre: ");
+        String nombre = teclado.nextLine();
+
+        //EDAD
+        System.out.print("Edad: ");
+        int edad = teclado.nextInt();
+        teclado.nextLine();
+
+        //salario
+        System.out.print("Salario: ");
+        double salario = teclado.nextDouble();
+        teclado.nextLine();
+
+        //es jefe?
+        System.out.print("¿Es jefe del departamento? (true/false): ");
+        boolean esJefe = teclado.nextBoolean();
+
+        // Imprimir los datos correctamente formateados
+        System.out.println("\n--- Datos del Empleado ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Salario: " + salario);
+        System.out.println("Es jefe: " + esJefe);
+        teclado.close();
+
     }
 
 
