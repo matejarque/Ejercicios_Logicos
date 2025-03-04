@@ -141,8 +141,11 @@ El sistema debe calcular el costo total de la estadia dependiendo si escogio un 
 
     }
 
-
-
+/**Retornar el mayor de dos numeros ingresados*/
+    private String cuarentaYCuatro(int num1, int num2){
+        String mayor = (num1 > num2) ? "El numero mayor es" + num1 : "El numero mayor es" + num2;
+        return mayor;
+    }
 
 
 
