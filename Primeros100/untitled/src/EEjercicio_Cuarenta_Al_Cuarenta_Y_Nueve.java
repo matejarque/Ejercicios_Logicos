@@ -111,6 +111,40 @@ public class EEjercicio_Cuarenta_Al_Cuarenta_Y_Nueve {
         System.out.println("Calorías quemadas: " + calorias_quemadas);
     }
 
+/*
+* Sistema reserva hotel
+
+Se solicita crear un sistema de reservación de un hotel, se debe pedir la siguiente información al usuario:
+Nombre de cliente
+Dias de estadia en el hotel
+cuarto con vista al mar?
+
+El hotel tiene las siguientes tarifas: Cuarto sin vista al mar 150.50 por dia- cuarto con vista al mar 190.50 por dia
+El sistema debe calcular el costo total de la estadia dependiendo si escogio un cuarto con vista al mar o no, además de indicar si escogio un cuarto con vista al mar o no
+*
+* */
+
+    private void cuarentaYTres(String nombreCliente, int cantidadDias, boolean vistaAlMar) {
+        Double tarifa = (vistaAlMar == true)
+                ? cantidadDias * 190.50
+                : cantidadDias * 150.50;
+        String vista = (vistaAlMar == true)
+                ? "Con vista al mar"
+                : "Sin vista al mar";
+
+        System.out.println("------- Detalles de la Reservación -------");
+        System.out.println("Nombre del cliente: " + nombreCliente);
+        System.out.println("Cantidad de días: " + cantidadDias);
+        System.out.println("Tipo de cuarto: " + vista);
+        System.out.println("Tarifa total: $" + String.format("%.2f", tarifa));
+        System.out.println("------------------------------------------");
+
+    }
+
+
+
+
+
 
 
 }
