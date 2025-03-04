@@ -78,6 +78,38 @@ public class EEjercicio_Cuarenta_Al_Cuarenta_Y_Nueve {
     }
 
 
+/*
+* Se Solicita crear una aplicación de salud y fitnes que solicite lo siguiente:
+        Nombre del usuario
+        Pasos caminados en el dia
+    Ademas definieros las siguientes constantes:
+    META_PASOS_DIARIOS = 10000
+    CALORIAS_POR_PASO = 0.03 //valor aproximado en kilocalorías
+
+    Con los valores anteriores debemos calcular las calorías quemadas según los pasos caminados.
+    calorías_quemadas = pasos_diarios*CALORIAS_POR_PASO
+    y verificaremos si se cumplio la meta de pasos diarios
+    meta_alcanzada = pasos_diarios >= META_PASOS_DIARIOS
+* */
+
+    private void cuarentaYDos(int pasosCaminados, String usuario) {
+        final int META_PASOS_DIARIOS = 10000;
+        final double CALORIAS_POR_PASO = 0.04;
+
+        String meta_alcanzada = (pasosCaminados >= META_PASOS_DIARIOS)
+                ? "¡Objetivo completo! ¡Felicidades!"
+                : "¡Objetivo incompleto!";
+
+        double caloriasCalculadas = pasosCaminados * CALORIAS_POR_PASO;
+
+        String calorias_quemadas = (caloriasCalculadas >= 10)
+                ? String.format("%.2f calorías", caloriasCalculadas)
+                : "Lo siento, gastaste menos de 10 calorías";
+
+        System.out.println("Usuario: " + usuario);
+        System.out.println("Meta alcanzada: " + meta_alcanzada);
+        System.out.println("Calorías quemadas: " + calorias_quemadas);
+    }
 
 
 
