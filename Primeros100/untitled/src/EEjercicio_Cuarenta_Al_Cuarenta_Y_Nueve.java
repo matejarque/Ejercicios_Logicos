@@ -35,7 +35,7 @@ public class EEjercicio_Cuarenta_Al_Cuarenta_Y_Nueve {
             ahorcado[i] = '_';
         }
         char letra;
-        int cont = 0, x = 0;
+        int cont = 0;
 
         do{
             acierto = false;
@@ -146,7 +146,25 @@ El sistema debe calcular el costo total de la estadia dependiendo si escogio un 
         String mayor = (num1 > num2) ? "El numero mayor es" + num1 : "El numero mayor es" + num2;
         return mayor;
     }
+/*
+* 	Sistema de envios
+    Crea un programa para determinar el costo de envió de un paquete según el destino (Nacional o internacional) y el peso del paquete
+    Costo tarifas - Nacional = 10 x kilo // internacional 20 x Kilo
 
+    Debe imprimir el costo de envió del paquete
+* */
+    private void cuarentaYCinco(Double peso, String destino){
+        double tarifa;
+        if ("nacional".equalsIgnoreCase(destino)) {
+            tarifa = 10 * peso;
+        } else {
+            tarifa = 20 * peso;
+        }
+        System.out.println("-------------TARIFA DEL ENVIO--------------------");
+        System.out.println("Tipo de envio: " + destino);
+        System.out.printf("Tarifa: %.2f%n", tarifa);
+        System.out.println("--------------------------------------------------");
+    }
 
 
 
