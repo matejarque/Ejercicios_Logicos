@@ -191,7 +191,22 @@ El sistema debe calcular el costo total de la estadia dependiendo si escogio un 
             }
         }
     }
+     /*
+     * Crea un programa que invierta el orden de una cadena de texto
+     * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+     * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+     */
+     private String cuarentaYSiete(String cadenaIngresada) {
+         char[] charArray = cadenaIngresada.toCharArray();
+         char[] charInvertido = new char[charArray.length];
+         int x = 0;
 
+         for (int i = charArray.length - 1; i >= 0; i--) {
+             charInvertido[x] = charArray[i];
+             x++;
+         }
 
+         return new String(charInvertido);
+     }
 
 }
